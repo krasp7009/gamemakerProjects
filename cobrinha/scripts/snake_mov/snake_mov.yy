@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"snake_mov",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"snake_mov",
+  "parent":{
+    "name":"move",
+    "path":"folders/Scripts/move.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

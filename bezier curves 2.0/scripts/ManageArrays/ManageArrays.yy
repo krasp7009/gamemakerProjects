@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ManageArrays",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ManageArrays",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

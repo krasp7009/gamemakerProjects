@@ -1,0 +1,2 @@
+droppingCard = false;
+objectSelected = noone

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_shine",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_shine",
+  "parent":{
+    "name":"FX",
+    "path":"folders/Scripts/FX.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

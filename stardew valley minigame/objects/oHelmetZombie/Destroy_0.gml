@@ -1,0 +1,3 @@
+
+
+oGame.numOfEnemies--;

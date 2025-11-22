@@ -1,0 +1,1 @@
+/// @description interpolação da piscada

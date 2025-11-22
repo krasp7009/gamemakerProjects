@@ -1,0 +1,28 @@
+{
+  "FolderOrderSettings":[
+    {"name":"Animation Curves","order":11,"path":"folders/Animation Curves.yy",},
+    {"name":"Extensions","order":13,"path":"folders/Extensions.yy",},
+    {"name":"Fonts","order":8,"path":"folders/Fonts.yy",},
+    {"name":"Notes","order":12,"path":"folders/Notes.yy",},
+    {"name":"Objects","order":1,"path":"folders/Objects.yy",},
+    {"name":"Particle Systems","order":14,"path":"folders/Particle Systems.yy",},
+    {"name":"Paths","order":6,"path":"folders/Paths.yy",},
+    {"name":"Rooms","order":2,"path":"folders/Rooms.yy",},
+    {"name":"Scripts","order":3,"path":"folders/Scripts.yy",},
+    {"name":"Sequences","order":10,"path":"folders/Sequences.yy",},
+    {"name":"Shaders","order":7,"path":"folders/Shaders.yy",},
+    {"name":"Sounds","order":5,"path":"folders/Sounds.yy",},
+    {"name":"Tile Sets","order":4,"path":"folders/Tile Sets.yy",},
+    {"name":"Timelines","order":9,"path":"folders/Timelines.yy",},
+  ],
+  "ResourceOrderSettings":[
+    {"name":"oMouseInteractions","order":1,"path":"objects/oMouseInteractions/oMouseInteractions.yy",},
+    {"name":"oPoints","order":2,"path":"objects/oPoints/oPoints.yy",},
+    {"name":"oSubPoints","order":3,"path":"objects/oSubPoints/oSubPoints.yy",},
+    {"name":"Drawing","order":2,"path":"scripts/Drawing/Drawing.yy",},
+    {"name":"ManageArrays","order":1,"path":"scripts/ManageArrays/ManageArrays.yy",},
+    {"name":"sBolasT","order":1,"path":"sprites/sBolasT/sBolasT.yy",},
+    {"name":"sMouse","order":2,"path":"sprites/sMouse/sMouse.yy",},
+    {"name":"sSubPoint","order":3,"path":"sprites/sSubPoint/sSubPoint.yy",},
+  ],
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"body_control",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"body_control",
+  "parent":{
+    "name":"move",
+    "path":"folders/Scripts/move.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
