@@ -13,6 +13,8 @@ if (keyboard_check_pressed(vk_backspace))
 	gameDeck.giveCardsPaciencia();	
 }
 
+
+//devolver cartas da coluna de compras ao deck principal
 if (mouse_check_button_pressed(mb_right) && position_meeting(gameMouse.x, gameMouse.y, laneForHoldingCardsPaciencia.returnTopCard()))
 {
 	if (keyboard_check(vk_shift))	

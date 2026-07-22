@@ -43,12 +43,15 @@ returnTopCard = function()
 
 rearrangeLane = function (_offset = 0)
 {
-	var _calcDist = function(_pos) {return (_pos+1)/2};
-	
-	for(var _i = _offset; _i < numOfCardsOnStack; _i++)
+	while(_offset < numOfCardsOnStack)
 	{
-		var _card = cardsOnStack[_i];
-		_card.lockCardOnPosition(x+_calcDist())
+		var _card = cardsOnStack[_offset];
+		_card.lockCardOnPosition(x + _offset/2, y - _offset/2);
+		_card.updateDepthByIteration(_offset, numOfCardsOnStack);
+		_card.isOnDeck = true;
+		_card.isLocked = true;
+		_card.lockToObject(self);
+		_card.turnCard(true);
 	}
 }
 

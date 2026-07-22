@@ -64,7 +64,7 @@ rearrangeLane = function (_lane = self)
 				_card.lockCardOnPosition(_newPosition.x, _newPosition.y);	
 				_card.lockToObject(_lane);
 				
-				if ((_card.chainedInfo.isChainning && _card.chainedInfo.isChained) || _card.isFaceDown)
+				if (_card.isFaceDown)
 					_card.isDraggable = false ;
 				else
 					_card.isDraggable = true;
@@ -156,7 +156,7 @@ addCard = function (_card)
 	self.rearrangeLane();
 };
 
-removeCard = function (_card = noone, _offSet = 0)
+removeCard = function(_card = noone, _offSet = 0)
 {	
 	var _array = self.cardsOnStack;
 	

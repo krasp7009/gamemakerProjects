@@ -41,9 +41,9 @@ switch(room)
 		
 		var _holdinLane = instance_create_layer(gameDeck.x  - _winningLaneDimensions.x, gameDeck.y,
 		"Instances", oLanePaciencia);
-		laneForHoldingCardsPaciencia = _holdinLane
+		laneForHoldingCardsPaciencia = _holdinLane;
 		_holdinLane.typeOfLane = "holdingLane";
-		_holdinLane.limitOfCardsOnStack = 5;
+		_holdinLane.limitOfCardsOnStack = infinity;
 		_holdinLane.baseDimension = _winningLaneDimensions;
 		_holdinLane.updateImageScale(_winningLaneDimensions);
 		_holdinLane.basePosition = new vector2D(_holdinLane.x, _holdinLane.y);

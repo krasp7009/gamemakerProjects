@@ -11,6 +11,17 @@ global.cursorSprites =
 function scrDoingBulshit()
 {
 	//will know what is above cursor
+	
+	var _candidatos = scrGetCardsUnderMouseByDepth();
+	
+	var _objectAbove = array_length(_candidatos) != 0 ? _candidatos[0] : noone;
+	var _nameOfObject;
+	
+	if (_objectAbove != noone)
+		_nameOfObject = object_get_name(_objectAbove.object_index);
+	else 
+		_nameOfObject = undefined;
+	/*
 	var _objectAbove = instance_position(self.x, self.y, oDeck)
 	var _nameOfObject;
 
@@ -18,7 +29,7 @@ function scrDoingBulshit()
 		_nameOfObject = object_get_name(_objectAbove.object_index);
 	else 
 		_nameOfObject = undefined;
-
+	*/
 	switch(_nameOfObject)
 	{
 		case "oCard":
@@ -34,7 +45,7 @@ function scrDoingBulshit()
 				{
 					sprite_index =  global.cursorSprites.pressedOnInteractable;
 				}
-				else  if (mouse_check_button_released(mb_left))
+				else if (mouse_check_button_released(mb_left))
 				{	
 					self.objectSelected = _objectAbove;
 					oPlayer.lastCardInteracted = _objectAbove;	
@@ -52,7 +63,6 @@ function scrDoingBulshit()
 					draggingCard = true;
 					self.state = scrDragCard;
 					self.state(_objectAbove);
-					
 				}
 				else
 				{

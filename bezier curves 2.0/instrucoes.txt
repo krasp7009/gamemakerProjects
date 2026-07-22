@@ -1,0 +1,4 @@
+mouse direito cria/remove pontos
+mouse esquerdo arrasta pontos criados
+espaco muda a paleta de cor
+setinhas mudam as dimensões de pontos/subpontos a serem desenhados

@@ -176,3 +176,16 @@ function scrTurnCard(_card = self)
 		isTurning = false;
 	}
 }
+
+function scrGetCardsUnderMouseByDepth()
+{
+	var _list = ds_list_create();
+	instance_position_list(oCursor.x, oCursor.y, oDeck, _list, false);
+	_list = scrConvertListToArray(_list);
+	array_sort(_list, function (current, next) 
+	{
+		return (current.depth == next.depth) ? 0 : ((current.depth < next.depth) ? -1 : 1);
+	});
+	
+	return _list;
+}

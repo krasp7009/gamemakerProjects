@@ -18,7 +18,7 @@ global.cursorSprites =
 };
 	
 
-scale = 1.5;
+scale = 1;
 image_xscale = scale;
 image_yscale = scale;
 depth = -200;
