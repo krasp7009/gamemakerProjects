@@ -5,7 +5,8 @@ isMB1Pressing = mouse_check_button(mb_left);
 
 if (keyboard_check_pressed(vk_enter))
 {
-	scrArrangeCards(gameDeck);	
+	gameDeck.shufleCards();
+	gameDeck.rearrangeLane();
 }
 
 if (keyboard_check_pressed(vk_backspace))

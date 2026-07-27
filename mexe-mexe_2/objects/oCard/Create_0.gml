@@ -44,10 +44,8 @@ turnSpd = 0.025;
 /// @description true = face pra baixo, false = face pra cima
 turnCard = function (_turnCardDir)
 {
-	if (isFaceDown && !_turnCardDir)
+	if ((isFaceDown && !_turnCardDir) || (!isFaceDown && _turnCardDir)) 
 		isTurning = true;
-	else if (!isFaceDown && _turnCardDir)
-		isTurning = trues;
 }
 
 chainedInfo = 

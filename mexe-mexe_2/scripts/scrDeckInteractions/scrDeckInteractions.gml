@@ -133,7 +133,7 @@ function scrArrangeCards(_deck = self)
 
 function scrPassCardFromStackToStack(_stackToRemove, _stackToAdd, _cardToRemove)
 {
-	if (_stackToAdd.limitOfCardsOnStack >= array_length(_stackToAdd.cardsOnStack))
+	if (array_length(_stackToAdd.cardsOnStack) < _stackToAdd.limitOfCardsOnStack)
 	{
 		_stackToRemove.removeCard(_cardToRemove);
 		_stackToAdd.addCard(_cardToRemove);

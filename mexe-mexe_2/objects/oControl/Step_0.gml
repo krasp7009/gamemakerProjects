@@ -33,8 +33,9 @@ if (gameMouse.droppingCard)
 			_laneOfCollided = instance_position(_gameMouse.x, _gameMouse.y, oLanePaciencia);
 		}	
 	}
+	
 	//lane a qual a carta solta colidiu
-	if (_laneOfCollided != noone)
+	if (!_cardColided.isOnDeck && _laneOfCollided != noone)
 	{
 		switch(_laneOfCollided.typeOfLane)
 		{

@@ -4,6 +4,7 @@ if (!variable_instance_exists(id, "color"))
 //
 color = enCardColorOnBack.blue;
 //
+typeOfLane = "";
 cardsByKind= [];
 allCards = [];
 cardsOnStack = [];
@@ -41,6 +42,12 @@ returnTopCard = function()
 	return array_last(cardsOnStack);	
 };
 
+
+shufleCards = function()
+{
+	cardsOnStack = array_shuffle(cardsOnStack);	
+}
+
 rearrangeLane = function (_offset = 0)
 {
 	while(_offset < numOfCardsOnStack)
@@ -52,6 +59,7 @@ rearrangeLane = function (_offset = 0)
 		_card.isLocked = true;
 		_card.lockToObject(self);
 		_card.turnCard(true);
+		_offset++;
 	}
 }
 
@@ -76,8 +84,8 @@ addCard = function(_card)
 	array_push(cardsOnStack, _card);
 	_card.isOnDeck = true;
 	_card.lockedOn = self;
-	
 	numOfCardsOnStack++;
+	rearrangeLane();
 }
 
 
@@ -103,6 +111,7 @@ removeCard = function(_card)
 	_card.lockedOn = noone;
 	_card.isOnDeck = false;
 	array_delete(cardsOnStack, _index, 1);
+	numOfCardsOnStack--;
 	return _index;
 }
 
