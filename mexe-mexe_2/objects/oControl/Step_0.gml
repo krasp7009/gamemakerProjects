@@ -35,7 +35,7 @@ if (gameMouse.droppingCard)
 	}
 	
 	//lane a qual a carta solta colidiu
-	if (!_cardColided.isOnDeck && _laneOfCollided != noone)
+	if ((_cardColided != noone && !_cardColided.isOnDeck) || _laneOfCollided != noone)
 	{
 		switch(_laneOfCollided.typeOfLane)
 		{

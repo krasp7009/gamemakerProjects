@@ -1,0 +1,2 @@
+inputText = "";
+focused = false;

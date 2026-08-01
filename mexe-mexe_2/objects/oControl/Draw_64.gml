@@ -12,7 +12,7 @@ for (var _i = 0; _i < _num; _i++)
 		_cursorAbove[_i] = noone;
 }
 
-draw_text(20, 60, _cursorAbove);
+//draw_text(20, 60, _cursorAbove);
 	
 //ds_list_destroy(_cursorAbove);
 

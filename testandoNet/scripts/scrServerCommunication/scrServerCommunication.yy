@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrServerCommunication",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrServerCommunication",
+  "parent":{
+    "name":"testandoNet",
+    "path":"testandoNet.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
