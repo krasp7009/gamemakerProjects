@@ -1,7 +1,12 @@
 if (focused)
 {
 	inputText = keyboard_string;
-	draw_set_colour(c_lime);
+	
+	
+	if (keyboard_check_pressed(vk_enter))
+	{
+			
+	}
 }
 else
 {

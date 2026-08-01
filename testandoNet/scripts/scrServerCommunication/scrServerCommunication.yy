@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scrServerCommunication",
   "parent":{
-    "name":"testandoNet",
-    "path":"testandoNet.yyp",
+    "name":"scripts",
+    "path":"folders/scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
